@@ -10,7 +10,14 @@ TypeLock.prototype.match = function (formalArguments) {
 
   if(formalArguments === null || formalArguments === undefined) {
     if(this.actualArgs.length > 0) {
-      throw new ReferenceError("Do not accept any arguments");
+      throw new ReferenceError();
+    }
+  }
+  if(typeof formalArguments === "number") {
+    if(this.actualArgs.length != 1 ||
+      typeof this.actualArgs[0] !== "number")
+    {
+      throw new ReferenceError();
     }
   }
 
