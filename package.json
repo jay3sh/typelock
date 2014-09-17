@@ -1,0 +1,13 @@
+{
+  "name": "TypeLock",
+  "description": "Static typing library",
+  "version": "0.0.1",
+  "author": "Jayesh Salvi <jayeshsalvi@gmail.com>",
+  "dependencies": {
+    "mocha" : "latest",
+    "expect"  : "git+ssh://git@github.com:LearnBoost/expect.js.git"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}
